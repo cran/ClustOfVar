@@ -22,8 +22,9 @@ LazyLoad: \tab yes\cr
 }
 \author{Marie Chavent <marie.chavent@u-bordeaux2.fr>, Vanessa Kuentz, Benoit Liquet, Jerome Saracco}
 \references{
-Chavent M., Kuentz V., Sarraco J., Clustering of categorical variables around latent variables, Cahiers du GREThA 2010-02, Groupe de Recherche en Economie Theorique et Appliquee, 2010.
-Chavent M., Kuentz V., Saracco J., A Partitioning Method for the clustering of Categorical variables, In Classification as a Tool for Research, Hermann Locarek-Junge, Claus Weihs (Eds), Proceedings of the IFCS 2009, Dresden, Springer, 2009. 
+Chavent M., Kuentz V., Liquet B., Saracco J. (2012). ClustOfVar: An R Package for the Clustering Of Variables.\emph{Journal of Statistical Software}, 50(13), 1-16. \cr
+
+Chavent M., Kuentz V., Sarraco J. (2012). Orthogonal rotation in PCAMIX. \emph{Advances in Data Analysis and Classification}, 6(2),131-146.
 }
 \keyword{ package }
 \seealso{

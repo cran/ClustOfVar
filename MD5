@@ -1,4 +1,4 @@
-bd0d996921c9b5997721865d74720bf8 *DESCRIPTION
+4902ce60b7cd5a4625f25aa66ce031de *DESCRIPTION
 1472db1782ba9418b8ae72ac49f296fb *NAMESPACE
 c5cf70c4988931cdecf2438b5a46a89c *R/ClustOfVar-internal.R
 1d991226bcbf605c3ddb9060cc1282d5 *R/bootvar.R
@@ -8,7 +8,7 @@ ca41cf9e7501af3e00e4deab191258b1 *R/cutreevar.R
 66e7481e0c78d782aaed10d6e54e30a8 *R/descript.R
 fd08ec84a97d67f4f5d960cf2b6b5c19 *R/getnnsvar.R
 f2f85d8584a364a7e64b4eea52a8c453 *R/hclustvar.R
-42defaa06e930ae18118fdce4f3aebd3 *R/kmeansvar.R
+54d5d9a8febe228e67c311ab034e9b2c *R/kmeansvar.R
 99520cd94b9b2910702c9bc285cbfb31 *R/missing.mean.R
 4cfd0daab392e324afb116d544c862f2 *R/mixedVarSim.R
 af408c874f7a55ecc5a85ff3916ea9d2 *R/plot.clustab.R
@@ -22,17 +22,18 @@ e233b58bb947a2fbe3105ad1f788f82f *R/print.clustab.R
 00a1b9d0eda5b71d8d91ca08634c2da4 *R/recodquant.R
 ff2c6f95ae792277c6afec0f2c3ac890 *R/stability.R
 77d6e70ec83b31eb183368b840b2b131 *R/summary.clustab.R
-8f142f79023cd0dfda17a24855fb299e *R/summary.clustvar.R
+599e6981a53a8fa44282ba6ffb55d1d2 *R/summary.clustvar.R
 ce0142d5dd089990c50180d6e9d843ef *R/tab.disjonctif.NA.R
 3cd09d2640ba69fe46fcda957a84f4f5 *R/tab.disjonctif.prop.R
 5e2c9a6d4f317a473df93c5bc46bec87 *data/decathlon.rda
 90149d2652753b0e773292cf281d2855 *data/vnf.rda
 10933f6d819bea03183a0eb23355eef5 *data/wine.rda
-be95681e18f8aa9186201ef7ec5a99e3 *man/ClustOfVar-package.Rd
+dc97576e49a6cee477e0f51426134e66 *inst/CITATION
+3f634e2de444a272904ba2e6865e6dab *man/ClustOfVar-package.Rd
 9168c15e0b4227f2f34e50f4d1dc94eb *man/cutreevar.Rd
 7d15c67df3052a403a13d830f1f68327 *man/decathlon.Rd
-1c79d469cdb6c182172cbee5a96d3754 *man/hclustvar.Rd
-5ec975fe6fb4f8f00e2df5b27bdf5211 *man/kmeansvar.Rd
+91fd6a20c06ab7216b09f8c9d9a3d42c *man/hclustvar.Rd
+666860c6a8aa9b9fe2fe57a1a31309e7 *man/kmeansvar.Rd
 03c7b21ae83427ad4fb2d8ae7e26d85a *man/mixedVarSim.Rd
 98895f3539792050d1c10cb47d15f6a4 *man/plot.clustab.Rd
 52b7a64bf2bd77c934695fc632f2b37c *man/plot.hclustvar.Rd
@@ -40,7 +41,7 @@ be95681e18f8aa9186201ef7ec5a99e3 *man/ClustOfVar-package.Rd
 1aa5bf29e3fdd63b5098edb6b49ff66d *man/print.clustvar.Rd
 1c14e70a0842bd1ca4f91482a50328c8 *man/print.hclustvar.Rd
 2948822eb88e35bfdf8412b028d48493 *man/rand.Rd
-5e3c8e0aca04421cc7e2b948606ecbec *man/stability.Rd
+0a2f8d79984a189e3cab188cddef3459 *man/stability.Rd
 6e1a647ea46dba372beb115dc7abcd4f *man/summary.clustab.Rd
 103dfde3b7bbf0ca5e51d31ce08f84a2 *man/summary.clustvar.Rd
 cfdbd232a0812831e49e982bb7849472 *man/vnf.Rd

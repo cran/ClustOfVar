@@ -41,11 +41,11 @@ function(object, ...)
 		cat("\n")
 		cat(paste("Cluster ",g,": "),sep=" ")
 		cat("\n")
-		print(x$var[[g]],digit=2)
+		print(x$var[[g]],digits=2)
 		cat("\n")
 	}
 	cat("\n")
-	cat(paste("Gain in cohesion (in %): ",round(x$E,digit=2)),sep=" ") 
+	cat(paste("Gain in cohesion (in %): ",round(x$E,digits=2)),sep=" ") 
 	cat("\n")
 }
 

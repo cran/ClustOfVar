@@ -52,6 +52,13 @@ the square of the canonical correlation between two sets of dummy variables, whe
 \item{scores}{a n by k numerical matrix which contains the k cluster centers. The center of a cluster is a synthetic variable: the first principal component calculated by PCAmix. 
 The k columns of \code{scores} contain the scores of the n observations units on the first PCs of the k clusters.}
 }
+
+\references{
+Chavent M., Kuentz V., Liquet B., Saracco J. (2012). ClustOfVar: An R Package for the Clustering Of Variables. \emph{Journal of Statistical Software}, 50(13), 1-16. \cr
+
+Chavent M., Kuentz V., Sarraco J. (2012). Orthogonal rotation in PCAMIX. \emph{Advances in Data Analysis and Classification}, 6(2),131-146.
+}
+
 \author{Marie Chavent <marie.chavent@u-bordeaux2.fr>, Vanessa Kuentz, Benoit Liquet, Jerome Saracco}
 
 

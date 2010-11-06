@@ -138,7 +138,7 @@ function(X.quanti=NULL,X.quali=NULL,init,iter.max=150,nstart=1,matsim=FALSE)
 				sv[g] <- latent$sv }
 		#Affectation step
 			if (p1>0) {
-					scorestand <- sweep(latent.var,2,STAT=sv,FUN="/")
+					scorestand <- sweep(latent.var,2,STATS=sv,FUN="/")
 					A[1:p1,]<-	(t(Z[,1:p1])%*%scorestand/n)^2
 				}
 			if (p1!=p)	{
