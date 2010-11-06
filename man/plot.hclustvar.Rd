@@ -1,0 +1,38 @@
+\name{plot.hclustvar}
+\alias{plot.hclustvar}
+\title{
+Dendrogram of the hierarchy of variables
+}
+\description{
+Dendrogram of the hierarchy of variables resulting from \code{hclustvar}.
+}
+\usage{
+\method{plot}{hclustvar}(x, sub="", \dots)
+}
+
+\arguments{
+  \item{x}{
+an object of class \code{hclustvar}.
+}
+  \item{sub}{
+a sub title for the plot.
+}
+  \item{\dots}{
+further arguments passed to or from other methods.
+}
+}
+
+\author{Marie Chavent <marie.chavent@u-bordeaux2.fr>, Vanessa Kuentz, Benoit Liquet, Jerome Saracco}
+
+\seealso{
+\code{\link{hclustvar}}
+}
+\examples{
+data(wine)
+X.quanti <- wine[,c(3:29)] 
+X.quali <- wine[,c(1,2)] 
+tree <- hclustvar(X.quanti,X.quali)
+plot(tree)
+}
+\keyword{ cluster }
+\keyword{ multivariate }
