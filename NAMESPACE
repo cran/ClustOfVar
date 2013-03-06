@@ -1,3 +1,5 @@
+export(predict.clustvar)
+S3method(predict,clustvar)
 export("cutreevar","hclustvar","mixedVarSim","kmeansvar","rand","stability","print.clustab"
 ,"print.hclustvar","summary.clustvar","summary.clustab","plot.clustab","plot.hclustvar","print.clustvar")
 S3method(print,clustab)
@@ -6,5 +8,4 @@ S3method(summary,clustvar)
 S3method(summary,clustab)
 S3method(plot,clustab)
 S3method(plot,hclustvar)
-
 

@@ -7,13 +7,18 @@ Dendrogram of the hierarchy of variables
 Dendrogram of the hierarchy of variables resulting from \code{hclustvar} and aggregation levels plot.
 }
 \usage{
-\method{plot}{hclustvar}(x,which=c(1:2), ask = prod(par("mfcol")) < length(which) && dev.interactive(),sub="", \dots)
+\method{plot}{hclustvar}(x, type="tree", which=c(1:2), 
+    ask = prod(par("mfcol")) < length(which) && dev.interactive(),sub="", \dots)
 }
 
 \arguments{
   \item{x}{
 an object of class \code{hclustvar}.
 }
+ \item{type}{
+if type="tree" plot of the dendrogram and if type="index" aggregation levels plot.
+}
+
 \item{which}{
 if one of the two plots is required, specify a subset of the numbers 1:2
 }

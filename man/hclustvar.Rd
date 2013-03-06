@@ -34,12 +34,6 @@ Thus negative entries in \code{merge} indicate agglomerations of singletons, and
 }
 }
 
-\references{
-Chavent M., Kuentz V., Liquet B., Saracco J. (2012). ClustOfVar: An R Package for the Clustering Of Variables.\emph{Journal of Statistical Software}, 50(13), 1-16. \cr
-
-Chavent M., Kuentz V., Sarraco J. (2012). Orthogonal rotation in PCAMIX. \emph{Advances in Data Analysis and Classification}, 6(2),131-146.
-}
-
 \author{Marie Chavent <marie.chavent@u-bordeaux2.fr>, Vanessa Kuentz, Benoit Liquet, Jerome Saracco}
 
 \seealso{

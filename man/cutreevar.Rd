@@ -41,7 +41,7 @@ The k columns of \code{scores} contain the scores of the n observations units on
 \author{Marie Chavent <marie.chavent@u-bordeaux2.fr>, Vanessa Kuentz, Benoit Liquet, Jerome Saracco}
 
 \seealso{
-\code{\link{hclustvar}}, \code{\link{summary.clustvar}},\code{\link{stability}}
+\code{\link{hclustvar}}, \code{\link{summary.clustvar}},\code{\link{predict.clustvar}},\code{\link{stability}}
 }
 \examples{
 data(decathlon)

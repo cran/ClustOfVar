@@ -78,7 +78,8 @@ function(X.quanti=NULL,X.quali=NULL,init,iter.max=150,nstart=1,matsim=FALSE)
 			if (nc1 != 0) {
 				A[1:p1,1:nc1] <- t(Z[,1:p1])%*%Z[,centers[1:nc1]]/n
 				for (g in 1:nc1) {
-					for (j in (p1+1):p) A[j,g] <- eta2(X.quanti[,centers[g]],X.quali[,(j-p1)])}		
+					for (j in (p1+1):p) A[j,g] <- eta2(X.quanti[,centers[g]],X.quali[,(j-p1)])
+				}		
 				}
 			if (nc2 != 0) {
 				for (g in (nc1+1):k) {
@@ -99,7 +100,7 @@ function(X.quanti=NULL,X.quali=NULL,init,iter.max=150,nstart=1,matsim=FALSE)
         stop("'init' must be a number or a vector")
 	if (length(init) == 1) {
 		k <- init 
-      	centers <- sort(sample.int(p, k))
+    centers <- sort(sample.int(p, k))
 		part <- as.factor(partinit(centers))
 		} else {
 			if (!is.integer(init))
