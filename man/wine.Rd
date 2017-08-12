@@ -4,7 +4,7 @@
 
 \docType{data}
 
-\title{Wines of french Val de Loire}
+\title{Wine}
 
 \description{
 The data used here refer to 21 wines of Val de Loire.
@@ -21,6 +21,8 @@ descriptors.
 
 \source{
 Centre de recherche INRA d'Angers
+
+Le, S., Josse, J. & Husson, F. (2008). FactoMineR: An R Package for Multivariate Analysis. Journal of Statistical Software. 25(1). pp. 1-18.
 }
 
 

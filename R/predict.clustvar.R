@@ -1,4 +1,4 @@
-#' @S3method predict clustvar
+#' @export predict.clustvar
 #' @export
 #' @name predict.clustvar
 #' @title Scores of new objects on the synthetic variables of a given partition
@@ -6,36 +6,38 @@
 #' Each cluster of this partition is associated with a synthetic variable which is a linear combination of the variables of the cluster.
 #' The coefficients of these k linear combinations (one for each cluster) are used here to calculate new scores of a objects described in a new dataset (with the same variables).
 #' The output is the matrix of the scores of these new objects on the k synthetic variables.
-#' @param part  an object of class clustvar
+#' @param object  an object of class clustvar
 #' @param X.quanti  numeric matrix of data for the new objects
 #' @param X.quali  a categorical matrix of data for the new objects
+#' @param \dots Further arguments to be passed to or from other methods. They are ignored in this function.
 #' @return Returns the matrix of the scores of the new objects on the k syntetic variables of the k-clusters partition given in input.
-#' @author Marie Chavent \email{marie.chavent@@math.u-bordeaux1.fr}, Vanessa Kuentz, Benoit Liquet, Jerome Saracco
-#' @examples  
+#' @examples
 #' data(wine)
 #' n <- nrow(wine)
-#' sub <- sample(1:n,10)
+#' sub <- 10:20
+#' data.sub <- wine[sub,] #learning sample
 #' X.quanti <- wine[sub,c(3:29)] #learning sample
-#' X.quali <- wine[sub,c(1,2)] 
-#' part <-kmeansvar(X.quanti,X.quali,init=5)
-#' X.quanti.t <- wine[-sub,c(3:29)] 
-#' X.quali.t <- wine[-sub,c(1,2)] 
+#' X.quali <- wine[sub,c(1,2)]
+#' part <-kmeansvar(X.quanti, X.quali, init=5)
+#' X.quanti.t <- wine[-sub,c(3:29)]
+#' X.quali.t <- wine[-sub,c(1,2)]
 #' new <- predict(part,X.quanti.t,X.quali.t)
 
-
-predict.clustvar <- function(object,X.quanti=NULL,X.quali=NULL,...)
+predict.clustvar <- function(object, X.quanti=NULL,X.quali=NULL,...)
 {
   part <- object
   if (!inherits(part, "clustvar")) 
     stop("use only with \"clustvar\" objects")
-  
+  #split.data<-splitmix(data)
+  #X.quanti<-split.data$X.quanti
+  #X.quali<-split.data$X.quali
   pfin <- part$cluster
   indexj <- part$rec$indexj
   indexg<-NULL
   for (i in 1:length(indexj))
     indexg[i]<-pfin[indexj[i]] #ds le cas quanti, indexg=pfin
   if (!is.null(X.quali)) 
-    G <- recodqual(X.quali) else G <- NULL
+    G <- PCAmixdata::recodqual(X.quali) else G <- NULL
   if (!is.null(X.quanti)) 
     Y1 <- as.matrix(X.quanti) else Y1 <- NULL
   Y <- cbind(Y1,G)
@@ -65,8 +67,8 @@ predict.clustvar <- function(object,X.quanti=NULL,X.quali=NULL,...)
     if (sum(rownames(X.quali)!=rownames(X.quanti))!=0) stop("The names of the objects in X.quanti and X.quali must be the same")
   }
   
- 
-  scores <- matrix(,nrow(Y),length(beta))
+  
+  scores <- matrix(NA,nrow(Y),length(beta))
   for (g in 1: length(beta))
   {
     Yg <- as.matrix(Y[,which(indexg==g)])
