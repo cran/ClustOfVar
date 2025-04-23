@@ -39,7 +39,7 @@
 #' clusters.} 
 #' \item{coef}{a list of the coefficients of the linear
 #' combinations defining the synthetic variable of each cluster.}
-#' @seealso \code{\link{hclustvar}}
+#' @seealso \code{\link{hclustvar}}, \code{\link{summary.clustvar}}, \code{\link{plot.clustvar}}, \code{\link{predict.clustvar}}
 #' @examples
 #' data(decathlon)
 #' tree <- hclustvar(decathlon[,1:10])

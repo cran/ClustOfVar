@@ -25,7 +25,7 @@
 #' plot(stab,nmax=7)
 #' boxplot(stab$matCR[,1:7])
 #'
-stability <- function(tree,B=100,graph=TRUE)
+stability <- function(tree, B = 100, graph = TRUE)
   {
     if (!inherits(tree, "hclustvar")) 
       stop("use only with \"hclustvar\" objects")

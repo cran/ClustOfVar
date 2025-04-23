@@ -4,8 +4,14 @@
 \alias{kmeansvar}
 \title{k-means clustering of variables}
 \usage{
-kmeansvar(X.quanti = NULL, X.quali = NULL, init, iter.max = 150,
-  nstart = 1, matsim = FALSE)
+kmeansvar(
+  X.quanti = NULL,
+  X.quali = NULL,
+  init,
+  iter.max = 150,
+  nstart = 1,
+  matsim = FALSE
+)
 }
 \arguments{
 \item{X.quanti}{a numeric matrix of data, or an object that can be coerced to such a matrix
@@ -102,7 +108,7 @@ ClustOfVar: An R Package for the Clustering of Variables. Journal of
 Statistical Software, Vol. 50, pp. 1-16.
 }
 \seealso{
-\code{\link{splitmix}}, \code{\link{summary.clustvar}},\code{\link{predict.clustvar}}
+\code{\link{summary.clustvar}}, \code{\link{plot.clustvar}}, \code{\link{predict.clustvar}}
 }
 \keyword{cluster}
 \keyword{multivariate}

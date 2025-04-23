@@ -63,5 +63,5 @@ summary(part)
 
 }
 \seealso{
-\code{\link{hclustvar}}
+\code{\link{hclustvar}}, \code{\link{summary.clustvar}}, \code{\link{plot.clustvar}}, \code{\link{predict.clustvar}}
 }
